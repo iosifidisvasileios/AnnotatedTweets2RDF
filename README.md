@@ -25,3 +25,17 @@ Below is the list with the indices for each attribute:
 10. Hashtags: String: If text contains hashtags we remove the char "#" and concatenate the hashtags with whitespace char " ". If no hashtags appear on text then we have stored "null;"
   
   
+# Deployment
+
+After you generate the jar file you can deploy the code on spark distributed system.
+
+We provide a class for generating the tuples and also some other classes for generating statistics from the dataset.
+
+Class 'RdfExtractor' is responsible for generating the tuples. As arguments it receives:
+
+0. Directory of your dataset (String)
+1. Percentage of the dataset's input (if you want full dataset set to 100)
+2. output directory
+
+i.e "spark-submit --class RdfExtractor file_name.jar input_directory/ 100 output_directory/"
+
