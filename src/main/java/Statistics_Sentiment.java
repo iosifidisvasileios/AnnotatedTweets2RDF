@@ -29,7 +29,7 @@ public class Statistics_Sentiment {
             String sentString = stringArray[8];
             int pos = Integer.valueOf(sentString.split(" ")[0]);
             int neg = Integer.valueOf(sentString.split(" ")[1]);
-            if (neg + pos == 0) {
+            if (neg == -1 && pos == 1) {
                 context.write(new Text("neutral_sentiment"), one);
             }
         }
