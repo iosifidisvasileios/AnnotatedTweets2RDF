@@ -34,7 +34,7 @@ We provide a class for generating the tuples and also some other classes for gen
 Class 'RdfExtractor' is responsible for generating the tuples. As arguments it receives:
 
 0. Directory of your dataset (String)
-1. Percentage of the dataset's input (if you want full dataset set to 100)
+1. Percentage of the dataset's input float (0, 1] (if you want full dataset set to 1)
 2. output directory
 
 i.e "spark-submit --class RdfExtractor file_name.jar input_directory/ 100 output_directory/"
