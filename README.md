@@ -1,4 +1,4 @@
-# RDF_Extractor
+# AnnotatedTweets2RDF
 
 This open source library was created in order to generate rdf tuples from a text corpus. It aims at extracting tuples from twitter's data (mostly) which must be stored in a specific way. It can also be used for any other dataset which fullfil the below description of indices.
 
